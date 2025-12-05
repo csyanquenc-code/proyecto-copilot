@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Patrones Arquitectónicos Modernos - Christopher Yanquen</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Christopher Yanquen</h1>
+      <p class="subtitle">Patrones Arquitectónicos Modernos</p>
+      <nav>
+        <a href="../index.html">Inicio</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <article class="post-header">
+      <h2>Patrones Arquitectónicos Modernos</h2>
+      <p>Fecha: 2025-11-30</p>
+    </article>
+
+    <section class="post-content">
+      <h3>Definición de patrón arquitectónico</h3>
+      <p>Un patrón arquitectónico es una solución reutilizable y probada para un problema de diseño arquitectónico recurrente. Normaliza cómo estructurar componentes, dependencias y flujos de datos.</p>
+
+      <h3>Patrón: Clean Architecture</h3>
+      <p><strong>Capas:</strong> Entidades (dominio), casos de uso (aplicación), interfaces (adaptadores), frameworks y drivers.</p>
+      <p><strong>Propósito:</strong> Mantener la lógica de negocio independiente de detalles externos (UI, BD, frameworks), facilitando pruebas y evolución.</p>
+
+      <h3>Arquitectura Hexagonal (Puertos y Adaptadores)</h3>
+      <p>Organiza el sistema alrededor del dominio; los "puertos" definen interfaces que los "adaptadores" concretan. Permite intercambiar infraestructuras sin afectar el núcleo.</p>
+
+      <h3>Patrón CQRS (Command Query Responsibility Segregation)</h3>
+      <p>CQRS separa las operaciones de escritura (commands) de las de lectura (queries). A menudo se combina con Event Sourcing para modelar los cambios en el sistema.</p>
+
+      <h3>Ventajas y desventajas</h3>
+      <ul>
+        <li><strong>Clean Architecture:</strong> + Alta aislación del dominio, pruebas fáciles. - Puede introducir más capas y complejidad inicial.</li>
+        <li><strong>Hexagonal:</strong> + Flexibilidad para integrar diferentes tecnologías. - Requiere disciplina en diseño de puertos/adaptadores.</li>
+        <li><strong>CQRS:</strong> + Escalabilidad y optimización de consultas, separación clara de responsabilidades. - Mayor complejidad, sincronización eventual y modelado de consistencia.</li>
+      </ul>
+
+      <h3>Ejemplos de aplicación</h3>
+      <p>- Clean Architecture: Aplicaciones empresariales con lógica de negocio compleja (banca, seguros) que requieren pruebas y mantenibilidad.<br>
+- Hexagonal: Sistemas que cambian frecuentemente de infraestructura (ej. migraciones de base datos o colas).<br>
+- CQRS: Sistemas con alta demanda de lectura/escritura diferenciada (motores de búsqueda, paneles analíticos, comercio con catálogo y alta concurrencia).</p>
+
+      <h3>Conclusión general</h3>
+      <p>Clean, Hexagonal y CQRS abordan diferentes necesidades: Clean prioriza la pureza del dominio; Hexagonal la independencia de infraestructura; CQRS la separación de cargas de lectura/escritura. Elegir uno u otro depende de requisitos de consistencia, escalabilidad y coste operativo. A menudo se combinan en una sola solución adaptada al contexto.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© Christopher Yanquen</div>
+  </footer>
+</body>
+</html>

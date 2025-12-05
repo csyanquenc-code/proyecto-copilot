@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Estilos Arquitectónicos más utilizados - Christopher Yanquen</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Christopher Yanquen</h1>
+      <p class="subtitle">Estilos Arquitectónicos más utilizados</p>
+      <nav>
+        <a href="../index.html">Inicio</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <article class="post-header">
+      <h2>Estilos Arquitectónicos más utilizados</h2>
+      <p>Fecha: 2025-11-30</p>
+    </article>
+
+    <section class="post-content">
+      <h3>Definición de estilo arquitectónico</h3>
+      <p>Un estilo arquitectónico es un conjunto de decisiones y restricciones sobre la organización de un sistema, que proporciona un vocabulario de componentes y conectores para resolver problemas comunes.</p>
+
+      <h3>Estilo Monolítico</h3>
+      <p><strong>Características:</strong> Aplicación empaquetada como una sola unidad, despliegue único.</p>
+      <p><strong>Ventajas:</strong> Simplicidad de desarrollo, despliegue y pruebas; menor complejidad operacional.</p>
+      <p><strong>Desventajas:</strong> Escalado limitado por componente global, mayor riesgo de regresiones al cambiar código, despliegue completo para cambios pequeños.</p>
+
+      <h3>Arquitectura en Capas (N-Capas)</h3>
+      <p>Se organiza el sistema en capas (presentación, lógica de negocio, acceso a datos). Cada capa ofrece servicios a la capa superior.</p>
+
+      <h3>Arquitectura Cliente-Servidor</h3>
+      <p>Separación entre clientes que solicitan servicios y servidores que los proporcionan. Muy usada en aplicaciones web y distribuidas.</p>
+
+      <h3>Arquitectura MVC</h3>
+      <p>MVC separa Model (datos), View (presentación) y Controller (lógica de interacción), facilitando la mantenibilidad y pruebas en interfaces de usuario.</p>
+
+      <h3>Arquitectura de Microservicios</h3>
+      <p><strong>Características:</strong> Sistema dividido en pequeños servicios independientes, cada uno con su propia responsabilidad y ciclo de despliegue.</p>
+      <p><strong>Ventajas:</strong> Escalabilidad fina, despliegues independientes, mayor resiliencia a fallos locales.</p>
+      <p><strong>Desventajas:</strong> Complejidad operativa (observabilidad, comunicación, transacciones distribuidas), mayor coste de infraestructuras.</p>
+
+      <h3>Comparación (resumen)</h3>
+      <ul>
+        <li><strong>Monolito:</strong> Fácil de empezar, difícil de escalar en equipos grandes.</li>
+        <li><strong>N-Capas:</strong> Buena separación lógica; puede convertirse en monolito si no se distribuye.</li>
+        <li><strong>Cliente-Servidor:</strong> Modelo clásico para servicios remotos, simple y efectivo.</li>
+        <li><strong>MVC:</strong> Ideal para aplicaciones con interfaces de usuario complejas.</li>
+        <li><strong>Microservicios:</strong> Mejor para sistemas que requieren escalado independiente y liberación frecuente.</li>
+      </ul>
+
+      <h3>¿Cuándo conviene cada estilo?</h3>
+      <p>- Proyectos pequeños o prototipos: Monolito o N-Capas.<br>
+- Aplicaciones con UI compleja: MVC o arquitectura en capas combinada con SPA en frontend.<br>
+- Productos que necesitan escalar por módulos y despliegues independientes: Microservicios.<br>
+- Sistemas distribuidos sencillos: Cliente-Servidor.</p>
+
+      <h3>Conclusión</h3>
+      <p>La elección del estilo depende de requisitos no funcionales, tamaño del equipo, necesidad de despliegues independientes y experiencia operativa. Empezar simple y evolucionar es una estrategia prudente.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© Christopher Yanquen</div>
+  </footer>
+</body>
+</html>
